@@ -58,6 +58,7 @@ src/
 
 - Node.js (v16 or higher)
 - npm or yarn
+- Expo Go app on your mobile device (for testing)
 - Expo CLI (installed automatically with dependencies)
 
 ### Installation
@@ -70,7 +71,7 @@ cd jiffy-frontend
 
 2. Install dependencies:
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ### Running the App
@@ -82,19 +83,20 @@ npm start
 
 Then choose your platform:
 
-- **iOS Simulator**: Press `i`
-- **Android Emulator**: Press `a`
-- **Web Browser**: Press `w`
-- **Expo Go App**: Scan the QR code with your device
+- **iOS Simulator**: Press `i` (requires macOS with Xcode)
+- **Android Emulator**: Press `a` (requires Android Studio)
+- **Expo Go App**: Scan the QR code with the Expo Go app on your device
 
 ### Available Scripts
 
 - `npm start` - Start the Expo development server
 - `npm run android` - Run on Android
-- `npm run ios` - Run on iOS
-- `npm run web` - Run on Web
-- `npm test` - Run tests
+- `npm run ios` - Run on iOS  
 - `npm run lint` - Run ESLint
+
+### Note on Testing
+
+Testing infrastructure for React Native 19 is still evolving. The app is designed with testability in mind, with clear separation of concerns between UI components, business logic, and data services.
 
 ## Usage
 
